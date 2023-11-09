@@ -1,5 +1,5 @@
 # ML_proj
-### Project for ML course. 
+Project for ML course. 
 
 ## Preparation for running the project:
 1. Install requirements.txt
