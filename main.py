@@ -17,7 +17,7 @@ uploaded_file = st.file_uploader('Upload an article', type=['txt'])
 query_text = st.text_input('Enter your question:', placeholder = 'Please provide a short summary.', disabled=not uploaded_file)
 
 # Initialize the ContextualAnswers object with the specified repository ID
-res = ContextualAnswers(repo_id="google/flan-t5-xxl")
+res = ContextualAnswers(repo_id="meta-llama/Llama-2-7b-hf")
 
 # Initialize the chain with the specified type and uploaded file
 res.init_chain(chain_type='stuff', uploaded_file=uploaded_file)
