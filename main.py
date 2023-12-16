@@ -22,7 +22,6 @@ res = ContextualAnswers(repo_id="meta-llama/Llama-2-7b-hf")
 # Initialize the chain with the specified type and uploaded file
 res.init_chain(chain_type='stuff', uploaded_file=uploaded_file)
 
-
 # Initialize an empty list to store the results
 result = []
 

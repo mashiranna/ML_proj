@@ -16,7 +16,6 @@ from huggingface_hub import login
 api_key = os.getenv('HUGGINGFACEHUB_API_TOKEN')
 login(api_key)
 
-
 # Define the ContextualAnswers class
 class ContextualAnswers():
     # Initialize the ContextualAnswers object with a repository ID
