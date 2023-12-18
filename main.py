@@ -22,13 +22,7 @@ for file in uploaded_file:
 # Input a question to the Streamlit app. The input field is disabled until a file is uploaded.
 query_text = st.text_input('Enter your question:', placeholder = 'Please provide a short summary.', disabled=not uploaded_file)
 
-# Initialize the ContextualAnswers object with the specified repository ID
-# res = ContextualAnswers(repo_id="meta-llama/Llama-2-7b-hf") # not enough memory for this one
-# res = ContextualAnswers(repo_id="tiiuae/falcon-7b") # gives uncertain answers
-# res = ContextualAnswers(repo_id="bigscience/bloom-560m") # gives too short answers
-# res = ContextualAnswers(repo_id="tiiuae/falcon-40b") # api call - time out
-# res = ContextualAnswers(repo_id='tiiuae/falcon-7b-instruct') # false answers
-# res = ContextualAnswers(repo_id='google/flan-t5-xxl')
+# Initialize the ContextualAnswers object
 res = ContextualAnswers()
 
 # Initialize the chain with the specified type and uploaded file
